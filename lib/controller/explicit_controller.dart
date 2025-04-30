@@ -21,7 +21,7 @@ class ExplicitController extends GetxController
   late Animation<double> opacityfadeTransAnimation;
   late Animation<double> scalAnimation;
   
-
+   double opacityLevel = 1 ; 
 
   late AnimationController animationControlleRepete;
   int index = 0 ;

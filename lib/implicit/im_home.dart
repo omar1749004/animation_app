@@ -7,6 +7,7 @@ import 'package:animation/explicit/position_dirction.dart';
 import 'package:animation/explicit/position_trainstion.dart';
 import 'package:animation/explicit/rotate_trans.dart';
 import 'package:animation/explicit/size_trans.dart';
+import 'package:animation/explicit/tween_animation_builder.dart';
 import 'package:animation/implicit/animat_list.dart';
 import 'package:animation/implicit/animat_swith.dart';
 import 'package:animation/implicit/animat_cross_fade.dart';
@@ -44,7 +45,7 @@ class ImHome extends StatelessWidget {
                     },
                     child: Text("lecture #1"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -57,16 +58,20 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimateOpacity()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimateOpacity(),
+                        ),
                       );
                     },
                     child: Text("lecture #3"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatPadding()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatPadding(),
+                        ),
                       );
                     },
                     child: Text("lecture #4"),
@@ -75,16 +80,20 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatPhysicalModel()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatPhysicalModel(),
+                        ),
                       );
                     },
                     child: Text("lecture #5"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatPositined()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatPositined(),
+                        ),
                       );
                     },
                     child: Text("lecture #6"),
@@ -93,7 +102,9 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatPositinedDirection()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatPositinedDirection(),
+                        ),
                       );
                     },
                     child: Text("lecture #7"),
@@ -102,7 +113,9 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatCrossFade()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatCrossFade(),
+                        ),
                       );
                     },
                     child: Text("lecture #8"),
@@ -125,16 +138,18 @@ class ImHome extends StatelessWidget {
                     },
                     child: Text("lecture #10"),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 10),
 
-                  Center(child: Text("Explicit"),),    
+                  Center(child: Text("Explicit")),
 
-                  SizedBox(height: 10,),
+                  SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => PositionTrainstion()),
+                        MaterialPageRoute(
+                          builder: (context) => PositionTrainstion(),
+                        ),
                       );
                     },
                     child: Text("lecture #1"),
@@ -148,7 +163,7 @@ class ImHome extends StatelessWidget {
                     },
                     child: Text("lecture #2"),
                   ),
-                    ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -161,12 +176,14 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => AnimatBuilder()),
+                        MaterialPageRoute(
+                          builder: (context) => AnimatBuilder(),
+                        ),
                       );
                     },
                     child: Text("lecture #4"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -179,12 +196,23 @@ class ImHome extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => PositionDirction()),
+                        MaterialPageRoute(
+                          builder: (context) => PositionDirction(),
+                        ),
                       );
                     },
                     child: Text("lecture #6"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TweenAnimatBuilder()),
+                      );
+                    },
+                    child: Text("lecture #7"),
+                  ),
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -193,7 +221,7 @@ class ImHome extends StatelessWidget {
                     },
                     child: Text("lecture #9"),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,

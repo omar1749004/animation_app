@@ -96,9 +96,7 @@ class CreaditCardController extends GetxController
       } else {
         offsetList[2] = 30;
       }
-
       lastIndexoffset = 30;
-
       update();
     }
   }
@@ -172,7 +170,6 @@ class CreaditCardController extends GetxController
     shownItems.clear();
     listKey = GlobalKey<AnimatedListState>();
     if (cardImages[2] == "assets/images/credit_card_3.png") {
-
       for (int i = 0; i < brandList3.length; i++) {
         await Future.delayed(Duration(milliseconds: 300));
         shownItems.insert(i, brandList3[i]);
