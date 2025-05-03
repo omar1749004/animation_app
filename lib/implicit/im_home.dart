@@ -18,6 +18,8 @@ import 'package:animation/implicit/animat_positioned.dart';
 import 'package:animation/implicit/animated_align.dart';
 import 'package:animation/implicit/animated_opacity.dart';
 import 'package:animation/implicit/animated_style.dart';
+import 'package:animation/page_animation/page_tow.dart';
+import 'package:animation/page_animation/page_transition.dart';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/state_manager.dart';
@@ -230,6 +232,20 @@ class ImHome extends StatelessWidget {
                     },
                     child: Text("Creadit Card example"),
                   ),
+                   SizedBox(height: 10),
+
+                  Center(child: Text("page")),
+
+                  SizedBox(height: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(ScaleTrans(
+                       page:  PageTow()
+                      ));
+                    },
+                    child: Text("Page Fade example"),
+                  ),
+
                 ],
               ),
               // Column(
